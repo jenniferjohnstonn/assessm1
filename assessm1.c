@@ -1,3 +1,5 @@
+/* subition (ceaser) cipher */
+
 #include <stdio.h>
 
 int main()
@@ -15,7 +17,7 @@ int main()
 	{
 		ch = message[i];
 		
-		if(ch >= 'a' && ch <= 'z') // change
+		if(ch >= 'a' && ch <= 'z') // switch statement    NEED TO CHANGE
 		{
 			ch = ch + key;
 			
