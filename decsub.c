@@ -1,3 +1,5 @@
+// decryption of substitution cipher
+
 #include <stdio.h>
 
 int main(void)
@@ -22,17 +24,24 @@ int main(void)
             emessage[i] = ' ';
             printf("%c", emessage[i]);
         }
-        else
+        
+        else // for upper case letters
         {
-
         temp = message[i];
         temp = (temp-65-key)%26;
         emessage[i] = temp + 65;
         printf("%c", emessage[i]);
-    }
-
+        }
         
+         else // for lower case letters
+        {
+          temp = message[i];
+        temp = (temp-97-key)%26;
+        emessage[i] = temp + 97;
+        printf("%c", emessage[i]);   
+        }
+
     }
-    printf("\n");
+    printf("Decrypted message: \n");
     return 0;
 }
