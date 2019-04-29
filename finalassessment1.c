@@ -118,7 +118,7 @@ int main()
         
     }
     
-    for (int i = 0; strlen(emessage); i++) 
+    for (int i = 0; i < strlen(emessage)-1 ; i++) 
    {
         if(smessage[i]== ' ')
         {
@@ -148,3 +148,4 @@ int main()
 	
 	return 0;
 }
+
