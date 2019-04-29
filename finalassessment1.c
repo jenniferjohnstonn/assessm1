@@ -118,7 +118,7 @@ int main()
         
     }
     
-    for (int i = 0; message[i]!='\0'; i++) 
+    for (int i = 0; strlen(emessage); i++) 
    {
         if(smessage[i]== ' ')
         {
@@ -143,7 +143,7 @@ int main()
         }
   
     }
-    printf("Encrpted message:\n", emessage); 
+    printf("Encrpted message:\n"); 
     printf("%s\n", emessage); // displays the encrypted message
 	
 	return 0;
